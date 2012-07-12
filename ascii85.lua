@@ -5,54 +5,20 @@
 -- Module: Ascii 85 Encoding in Pure Lua
 -- Author : Satheesh
 -- 
--- License:
---
---    Permission is hereby granted, free of charge, to any person obtaining a copy of 
---    this software and associated documentation files (the "Software"), to deal in the 
---    Software without restriction, including without limitation the rights to use, copy, 
---    modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, 
---    and to permit persons to whom the Software is furnished to do so, subject to the 
---    following conditions:
--- 
---    The above copyright notice and this permission notice shall be included in all copies 
---    or substantial portions of the Software.
--- 
---    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
---    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
---    PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE 
---    FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
---    OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
---    DEALINGS IN THE SOFTWARE.
---
--- Overview: 
---
---    This module can be used to verify and validate auto-renewable in-app purchases using Corona
---
---
+-- License: MIT
+
 -- Version : 1.0 
 --
 --
 -- Usage:
 --
+-- local ascii85 = require "ascii85"
 --
--- local validate = require "validate"
--- validate.start
--- {
--- receipt = "Your Receipt Here",
--- password = "Your shared secret key here",
--- listener = listener,				
--- testing = true,					--Should be true if you use sandbox receipt, false if you use actual receipt
-
---The following lines must be uncommented if you want your receipt to be verified by your server.
---The php for receipt verification is also included within the project
---[[							
-serverValidation = true,
-serverLink = "Link of your php file"
---]]
-
---
+-- local input = "Sample_Input"
+-- local enc = ascii85.encode(input)
+-- local dec = ascii85.decode(enc)
 --====================================================================--
---
+
 
 
 
